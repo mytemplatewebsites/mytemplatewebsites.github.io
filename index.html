@@ -6,7 +6,7 @@
     <title>Game Website</title>
     <style>
         body {
-            background: #0d0d0d;
+            background: #0a0a0a;
             color: #fff;
             font-family: 'Poppins', sans-serif;
             text-align: center;
@@ -15,20 +15,19 @@
             overflow-x: hidden;
         }
         header {
-            background: rgba(20, 20, 20, 0.9);
+            background: rgba(20, 20, 20, 0.95);
             padding: 20px;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
         .container {
-            padding: 100px 50px;
+            padding: 120px 50px;
         }
         h1 {
             font-size: 3.5rem;
-            animation: fadeIn 2s ease-in-out;
         }
         .button {
             display: inline-block;
@@ -36,47 +35,50 @@
             margin: 20px;
             font-size: 1.5rem;
             color: #fff;
-            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            background: linear-gradient(45deg, #ff0077, #0077ff);
             border: none;
             cursor: pointer;
-            border-radius: 50px;
+            border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .button:hover {
             transform: scale(1.1);
-            box-shadow: 0 0 25px rgba(255, 0, 255, 0.8);
+            box-shadow: 0 0 30px rgba(255, 0, 119, 0.8);
         }
         .placeholder {
             width: 80%;
-            max-width: 600px;
-            height: 300px;
-            background: #222;
-            color: #ff0000;
+            max-width: 800px;
+            height: 350px;
+            background: #181818;
+            color: #ff4444;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
-            border: 3px dashed #ff0000;
+            font-size: 1.8rem;
+            border: 3px solid #ff4444;
             margin: 40px auto;
-            animation: pulse 1.5s infinite alternate;
-            border-radius: 15px;
+            border-radius: 20px;
         }
         .text {
             font-size: 2.2rem;
             margin: 30px;
-            animation: fadeInUp 1.5s ease-in-out;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
-        @keyframes fadeInUp {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        .info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
         }
-        @keyframes pulse {
-            from { transform: scale(1); opacity: 0.7; }
-            to { transform: scale(1.05); opacity: 1; }
+        .info p {
+            font-size: 1.4rem;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -91,6 +93,10 @@
         <button class="button">Button</button>
         <div class="placeholder">UNFINISHED PRODUCT</div>
         <div class="text">Text</div>
+        <div class="info">
+            <h2>Information</h2>
+            <p>This is a placeholder for more details about the game. Stay tuned for updates and exciting features coming soon!</p>
+        </div>
     </div>
 </body>
 </html>
