@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Website</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 1.5rem;
+            color: #fff;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+        }
+        .placeholder {
+            width: 300px;
+            height: 200px;
+            background: #222;
+            color: #ff0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            border: 2px dashed #ff0000;
+            margin: 20px auto;
+            animation: pulse 1.5s infinite alternate;
+        }
+        .text {
+            font-size: 2rem;
+            margin: 20px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            from { transform: scale(1); opacity: 0.6; }
+            to { transform: scale(1.1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Game Website</h1>
+        <div class="placeholder">UNFINISHED PRODUCT</div>
+        <div class="text">Text</div>
+        <button class="button">Button</button>
+        <button class="button">Button</button>
+        <div class="placeholder">UNFINISHED PRODUCT</div>
+        <div class="text">Text</div>
+    </div>
+</body>
+</html>
